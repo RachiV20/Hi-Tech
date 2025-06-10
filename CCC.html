@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Computer</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+.cover-bg {
+    width: 100vw;
+    height: 380px;
+    background:
+        linear-gradient(rgba(26, 78, 157, 0.45), rgba(26, 78, 157, 0.45)),
+        url('icons/bg.jpg') center center/cover no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.main-content {
+    max-width: 1400px;
+    margin: 0px auto 0 auto; /* pulls up over the cover */
+    background: #f3ebebe3;
+    
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 40px 32px 32px 32px;
+    min-height: 1000px;
+    position: relative;
+    z-index: 2;
+}
+        @media (max-width: 950px) {
+            .main-content {
+                max-width: 98vw;
+                padding: 24px 4vw;
+            }
+        }
+
+     #scrollTopBtn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1000;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+        }
+        .progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  pointer-events: none;
+        }
+        .bg-ring {
+  stroke: black;
+  opacity: 0.2;
+        }
+        .progress-ring__circle {
+  stroke: #007bff;
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+  transition: stroke-dashoffset 0.35s;
+        }
+        .arrow {
+  font-size: 2em;
+  color: #007bff;
+  z-index: 1;
+  pointer-events: none;
+  position: relative;
+        }
+        #scrollTopBtn:hover {
+    border: rgba(255,255,255,0.1); /* Slight hover effect, optional */
+    color: #fff;
+        }
+
+        .main-content h1 {
+    margin-bottom: 50px; /* Increase as needed */
+    font-size: 2.5em;
+    color:#080808;
+}
+.main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+   color:#104aa1;
+}
+.main-content h3 {
+    margin-top: 100px; /* Optional: increase space above h3 */
+    margin-bottom:50px;
+    font-size:1.5em;
+    color:#080808;
+}
+.main-content ul {
+    font-size:1.2em;
+    line-height: 1.6;
+    color:#080808;
+}
+
+.main-content ul li b {
+    color: #080808;
+}
+
+.main-content ul li{
+    margin-bottom:18px;
+    color:#104aa1;
+}
+.main-content p:last-of-type{
+    margin-top:50px;
+    font-size:1em;
+    color:#080808;
+}
+    </style>
+</head>
+<body>
+    <div class="cover-bg"></div>
+    <div class="main-content">
+    <h1>Basics of Computer</h1>
+    <p>
+        The Course on Computer Concepts (CCC) is a certificate-level course designed to provide basic IT literacy to individuals, particularly those in government and professional sectors. It aims to equip individuals with essential computer skills for both professional and personal use, including office automation, understanding of latest technologies, and e-governance applications.
+    </p>
+    <h3>Key Features of the CCC Course:</h3>
+    <ul>
+        <li><b>Basic IT Literacy:</b> The CCC course focuses on imparting fundamental knowledge and skills related to computers, including hardware, software, and networking.</li>
+        <li><b>Practical Skills:</b> It emphasizes hands-on training in using software packages like word processors, spreadsheets, and presentation software, as well as internet browsing and email communication.</li>
+        <li><b>Digital Literacy:</b> The course aims to make individuals digitally literate, enabling them to use computers confidently in various aspects of their lives, including office work, personal tasks, and accessing e-governance services.</li>
+        <li><b>Skill Enhancement:</b> The CCC course is also considered a valuable tool for reskilling and upskilling individuals in the rapidly evolving IT landscape.</li>
+    </ul>
+    <p>
+        The CCC course is particularly beneficial for those who are new to computers or those who wish to enhance their existing skills. It is recognized by various government bodies and is often a prerequisite for employment in many sectors. By completing the CCC course, individuals can improve their employability and gain a competitive edge in the job market.
+        The course is structured to be accessible to all, regardless of prior computer knowledge, making it an ideal starting point for anyone looking to enter the world of information technology.
+    </p>
+    <h3>Course Structure:</h3>
+    <p>
+        The CCC course typically covers the following topics:
+    </p>
+    <ul>
+        <li>Introduction to Computers: Understanding hardware, software, and basic computer operations.</li>
+        <li>Office Automation: Using word processors, spreadsheets, and presentation software.</li>
+        <li>Internet and Email: Browsing the web, using search engines, and managing email accounts.</li>
+        <li>Digital Communication: Understanding digital communication tools and social media.</li>
+    </ul>
+    <h3>Course Duration:</h3>
+    <p>The students are to practice an hour a day for 2 months for the completion of the course.</p>
+    <h3>Eligibility:</h3>
+    <p>There are no specific eligibility criteria for the CCC course, making it accessible to anyone interested in learning about computers.</p>
+    <p>Classes are conducted from 9am to 5pm on weekdays. Apart from this, students will have access to course materials and support throughout the duration.</p>
+    <h3>Certification:</h3>
+    <p>Upon successful completion of the course, participants receive a certificate that is recognized by various government and private organizations.</p>
+    <p>Please feel free to contact in case of any other queries or registration.</p>
+</div>
+
+<button id="scrollTopBtn" aria-label="Scroll to top">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="bg-ring" cx="30" cy="30" r="25" stroke-width="4" fill="none" />
+            <circle class="progress-ring__circle" cx="30" cy="30" r="25" stroke-width="4" fill="none" />
+        </svg>
+        <span class="arrow">&#8679;</span>
+    </button>
+
+<script>
+window.addEventListener('scroll', function() {
+    const scrolled = window.scrollY;
+    document.querySelector('.cover-bg').style.backgroundPosition = `center calc(50% + ${scrolled * 0.4}px)`;
+});
+
+document.getElementById('scrollTopBtn').onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+// Place this at the end of your <script> section, after your other JS
+const circle = document.querySelector('.progress-ring__circle');
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+
+circle.style.strokeDasharray = `${circumference}`;
+circle.style.strokeDashoffset = `${circumference}`;
+
+function setProgress(percent) {
+  const offset = circumference - (percent / 100) * circumference;
+  circle.style.strokeDashoffset = offset;
+}
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  setProgress(scrollPercent);
+});
+
+document.getElementById('scrollTopBtn').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
